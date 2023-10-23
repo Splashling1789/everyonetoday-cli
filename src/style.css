@@ -1,0 +1,13 @@
+body {
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+nav {
+    background-color: aqua;
+    width: fit-content;
+    height: 2cm;
+    padding-left: 5px;
+    padding-right: 5px;
+}
