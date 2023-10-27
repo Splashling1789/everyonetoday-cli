@@ -16,10 +16,23 @@ fn App(cx: Scope) -> Element {
             include_str!("../src/style.css")
         }
         nav {
-            "Hello wol"
+            span {
+                class: "title",
+                "EveryoneToday CLI"
+            }
         }
         div {
-
+            class: "main-content",
+            section {
+                class: "main-section",
+                "Aquí va la sección principal"
+            }
+            section {
+                class: "posts-section",
+                article {
+                    "Artículo"
+                }
+            }
         }
     })
 }
