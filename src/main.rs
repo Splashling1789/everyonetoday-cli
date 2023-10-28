@@ -4,6 +4,7 @@ use dioxus::html::style;
 // import the prelude to get access to the `rsx!` macro and the `Scope` and `Element` types
 use dioxus::prelude::*;
 
+const EVTD_SUBTITLE: &str = "Your title is here";
 fn main() {
     // launch the web app
     dioxus_web::launch(App);
@@ -16,9 +17,16 @@ fn App(cx: Scope) -> Element {
             include_str!("../src/style.css")
         }
         nav {
-            span {
+            div {
                 class: "title",
-                "EveryoneToday CLI"
+                div {
+                    class: "supertitle",
+                    "EveryoneToday CLI"
+                }
+                div {
+                    class: "subtitle",
+                    format!("- {EVTD_SUBTITLE} -")
+                }
             }
         }
         div {
