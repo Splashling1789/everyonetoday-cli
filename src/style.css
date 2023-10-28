@@ -2,7 +2,7 @@
 
 /* Here you can specify the main font */
 * {
-    font-family: 'Playpen Sans';
+    font-family: 'Playpen Sans', serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 nav {
     background-color: white;
     /*border-bottom: 0px solid black;*/
-    box-shadow: 0px 1px 2px lightgrey;
+    box-shadow: 0 1px 2px lightgrey;
     height: 1.2cm;
     padding-left: 5px;
     padding-right: 5px;
