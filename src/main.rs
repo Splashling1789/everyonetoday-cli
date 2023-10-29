@@ -1,6 +1,5 @@
 #![allow(non_snake_case)]
 
-use dioxus::html::style;
 // import the prelude to get access to the `rsx!` macro and the `Scope` and `Element` types
 use dioxus::prelude::*;
 
@@ -9,7 +8,6 @@ fn main() {
     // launch the web app
     dioxus_web::launch(App);
 }
-
 // create a component that renders a div with the text "Hello, world!"
 fn App(cx: Scope) -> Element {
     cx.render(rsx! {
@@ -33,12 +31,31 @@ fn App(cx: Scope) -> Element {
             class: "main-content",
             section {
                 class: "main-section",
-                "Aquí va la sección principal"
+                h2 {
+                    "Welcome to the wall!"
+                },
+                p {
+                    "This is what everyone is thinking"
+                }
             }
             section {
                 class: "posts-section",
                 article {
-                    "Artículo"
+                    i {
+                        class: "post-quote",
+                        "This is a test message. Lorem bla bla bla and bla.\nCause bla is life"
+                    }
+                    i {
+                        class: "post-sign",
+                        "- Pablo"
+                    }
+                    span {
+                        class: "post-time",
+                        "08:10"
+                    }
+                }
+                article {
+                    "Artículo2"
                 }
             }
         }

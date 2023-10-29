@@ -45,9 +45,44 @@ nav {
     width: auto;
     height: fit-content;
     align-self: center;
-    margin: 20px 20%;
-}
-
-.main-section {
-
+    margin: 40px 20%;
+    /*Adapt to phone screens: */
+    @media only screen and (max-width: 600px) {
+        margin: 40px 5%;
+    }
+    .main-section{
+        & h2 {
+            margin: 0 auto 10px;
+            text-align: center;
+        }
+        align-content: center;
+        padding: 10px 20px;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        background-color: aliceblue;
+    }
+    .posts-section {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        & article {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: #eaf4ff;
+            margin: 20px 10px;
+            .post-quote {
+                margin-bottom: 20px;
+            }
+            .post-sign {
+                margin-bottom: 10px;
+            }
+            .post-time {
+                font-size: x-small;
+            }
+        }
+    }
 }
