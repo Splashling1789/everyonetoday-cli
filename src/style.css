@@ -57,16 +57,18 @@ nav {
         }
         align-content: center;
         padding: 10px 20px;
-        border-width: 1px;
+        /*border-width: 1px;
         border-radius: 10px;
         border-color: black;
         border-style: solid;
-        background-color: aliceblue;
+        background-color: aliceblue;*/
     }
     .posts-section {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         & article {
             padding: 10px 20px;
             display: flex;
@@ -74,6 +76,7 @@ nav {
             border-radius: 10px;
             background-color: #eaf4ff;
             margin: 20px 10px;
+            width: auto;
             .post-quote {
                 margin-bottom: 20px;
             }
