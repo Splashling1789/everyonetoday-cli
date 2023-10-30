@@ -40,11 +40,14 @@ fn App(cx: Scope) -> Element {
             }
             section {
                 class: "posts-section",
+                for i in 0..6{
                 article {
                     i {
-                        class: "post-quote",
-                        "This is a test message. Lorem bla bla bla and bla.\nCause bla is life"
-                    }
+                            p {
+                                class: "post-quote",
+                                "This is a test message. Lorem few fjw efojw efoj fojef ojf joe foje", br{}, "foje foje foj f bla bla bla and bla. Cause bla is lifef weiojfijw oi fweinioj fwioejjijij fifi"
+                            }
+                        }
                     i {
                         class: "post-sign",
                         "- Pablo"
@@ -54,9 +57,7 @@ fn App(cx: Scope) -> Element {
                         "08:10"
                     }
                 }
-                article {
-                    "Artículo2"
-                }
+                    }
             }
         }
     })
